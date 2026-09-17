@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm -v)",
+      "Bash(curl -sI --max-time 8 https://registry.npmjs.org/)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(npx vitest *)",
+      "Bash(curl -s http://127.0.0.1:3210/)",
+      "Bash(curl -s -o /dev/null -w \"SPA /orders/123 -> %{http_code}\\\\n\" http://127.0.0.1:3210/orders/123)",
+      "Bash(ps -p 4032 -o pid,cmd)",
+      "Read(//tmp/**)",
+      "Bash(pkill -f \"panel-nesting-server.*start\")",
+      "Bash(pkill -f \"npm exec tsx\")",
+      "Bash(curl -s -m 2 -o /dev/null -w \"%{http_code}\" http://127.0.0.1:3210/)"
+    ]
+  }
+}
