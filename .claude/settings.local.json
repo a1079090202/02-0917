@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm -v)",
+      "Bash(npm ping *)",
+      "Bash(npm install *)",
+      "Bash(npx vitest *)",
+      "Bash(npx tsc *)",
+      "Bash(npm run *)",
+      "Bash(curl *)",
+      "Bash(cd *)",
+      "Bash(python3 *)",
+      "Bash(node -e ' *)",
+      "Bash(npx tsx *)",
+      "Bash(timeout 12 npx vite --port 5173)",
+      "Bash(pkill -f \"tsx src/index.ts\")",
+      "Bash(pkill -f vite)"
+    ]
+  }
+}
